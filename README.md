@@ -5,6 +5,12 @@ Semantic Segmentation of Agricultural Crop Multispectral Image Using Feature Fus
 
 This repository contains the code for my paper: [Semantic Segmentation of Agricultural Crop Multispectral Image Using Feature Fusion
 ](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003077667).
+<p float="center">
+  <img src="./readme/model.png" width="900" />
+</p>
+
+
+
 
 ## DATA-DIR
 ```sh
@@ -63,3 +69,6 @@ The results will be rendered and put in ./result/
 
 
 ### Inference example
+<p float="left">
+  <img src="./readme/inference.png" width="300" />
+</p>
