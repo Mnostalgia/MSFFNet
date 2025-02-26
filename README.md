@@ -16,19 +16,44 @@ This repository contains the code for my paper: [Semantic Segmentation of Agricu
 
 
 ## Custom dataset
-We do not provide custom datasets. sorry.
-
-
+Due to circumstances, we are unable to provide our own dataset. sorry.
 
 ### DATA-DIR
 ```sh
 <dataset>
-./rgb                 //rgb images
-./etc multispectral   //another multispectral images dic ex) blue, green, nir, re ---
-./labels              //.
-./train.txt
-./test.txt            //Train-test split.
+│
+├── rgb               # rgb images
+│   ├── image_1.JPG
+│   ├── image_2.JPG
+│   └── ...
+│
+├── etc multispectral  # another multispectral images dic ex) blue, green, nir, re ---
+│   ├── image_1.TIF
+│   ├── image_2.TIF
+│   └── ...
+│
+├── labels             # label images
+│   ├── image_1.png
+│   ├── image_2.png
+│   └── ...
+│
+├── train.txt          
+└── test.txt           # Train-test split.
+
+<train.txt>
+image_1
+image_2
+...
+
+<test.txt>
+...
+image_n-1
+image_n
+
 ```
+We used ndvi as the name of the etc multispectral folder and used the TIF image as the dataset.
+
+In the __getitem__ function of class MF_dataset in MF_dataset.py, change the folder name and extension name to suit your dataset.
 
 ## Getting started
 
